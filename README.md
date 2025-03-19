@@ -15,8 +15,8 @@ pip install TikTokApi
 ## Output
 As output you get the video as .mp4 and some metadata as a csv file (video_id,video_timestamp,video_duration,video_locationcreated,video_diggcount,video_sharecount,video_commentcount,video_playcount,video_description,video_is_ad,video_stickers,author_username,author_name,author_followercount,author_followingcount,author_heartcount,author_videocount,author_diggcount,author_verified,poi_name,poi_address,poi_city). 
 
-## Additional TikTok profile video links scraper:
-To automatically scrape the video links of a profile and save them as csv, use the "get_video_links_of_profile" script. You just need to add the profile name in there and then you'll be good to go getting around 36 video links. More than 36 videos seems to be blocked by lazy loading of TikTok.
+## Additional TikTok profile video links scraper (based on selenium):
+To automatically scrape the video links of a profile and save them as csv, use the "Get_all_Links_of_profile.py" script. You just need to add the profile name in there and then you'll be good to go getting around 36 video links. More than 36 videos seems to be blocked by lazy loading of TikTok.
 Make sure to adjust the username you aim to scraoe in the script. I used markus.soeder as an example here. You can also play with the wait times (here 5 sec) and the maximum attempts (here 30).
 ```bash
     username = "markus.soeder" #add the suername to scrape here, no "@" needed!
